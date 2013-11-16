@@ -1,11 +1,10 @@
 /* jshint strict: false */
 
 require('should');
-var Logger = require('../lib/logger'),
+var Logger = require('./../../lib/logger'),
     log4js = require('log4js'),
-    log4jsLogger = require('./../node_modules/log4js/lib/logger').Logger,
+    log4jsLogger = require('./../../node_modules/log4js/lib/logger').Logger,
     sinon = require('sinon');
-    // utils = require('./utils');
 
 function logMe(logger, level, msg) {
     logger[level](msg);
@@ -66,10 +65,5 @@ describe('Default logger', function() {
         });
 
     });
-/*
-    after(function() {
-        utils.clearAllLogs();
-    });
-*/
  
 });
