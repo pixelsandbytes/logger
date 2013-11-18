@@ -19,7 +19,7 @@ describe('Default logger', function() {
 
         before(function() {
             sinon.spy(log4js, 'getLogger');
-            sinon.spy(log4jsLogger.prototype, 'debug');
+            sinon.stub(log4jsLogger.prototype, 'debug');
 
             logMe(logger, 'debug', message);
         });
@@ -45,7 +45,7 @@ describe('Default logger', function() {
 
         before(function() {
             sinon.spy(log4js, 'getLogger');
-            sinon.spy(log4jsLogger.prototype, 'info');
+            sinon.stub(log4jsLogger.prototype, 'info');
 
             logMe(logger, 'info', message);
         });
@@ -71,7 +71,7 @@ describe('Default logger', function() {
 
         before(function() {
             sinon.spy(log4js, 'getLogger');
-            sinon.spy(log4jsLogger.prototype, 'warn');
+            sinon.stub(log4jsLogger.prototype, 'warn');
 
             logMe(logger, 'warn', message);
         });
@@ -97,7 +97,7 @@ describe('Default logger', function() {
 
         before(function() {
             sinon.spy(log4js, 'getLogger');
-            sinon.spy(log4jsLogger.prototype, 'error');
+            sinon.stub(log4jsLogger.prototype, 'error');
 
             logMe(logger, 'error', message);
         });
@@ -123,7 +123,7 @@ describe('Default logger', function() {
 
         before(function() {
             sinon.spy(log4js, 'getLogger');
-            sinon.spy(log4jsLogger.prototype, 'fatal');
+            sinon.stub(log4jsLogger.prototype, 'fatal');
 
             logMe(logger, 'fatal', message);
         });
