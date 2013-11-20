@@ -1,6 +1,12 @@
 {
     "name": "logger",
     "version": "0.0.1",
+    "author": "Pixels & Bytes <pxandbytes@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pixelsandbytes/caller-id.git"
+    },
+    "main": "./lib/logger.js",
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-cli": "~0.1.9",
